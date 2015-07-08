@@ -14,6 +14,8 @@
 		947CF8AA1B4B8E99009B2FA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947CF8A91B4B8E99009B2FA2 /* Images.xcassets */; };
 		947CF8AD1B4B8E99009B2FA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947CF8AB1B4B8E99009B2FA2 /* LaunchScreen.xib */; };
 		947CF8B91B4B8E99009B2FA2 /* Miscellaneous_Photo_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 947CF8B81B4B8E99009B2FA2 /* Miscellaneous_Photo_TrackerTests.m */; };
+		949FAE661B4CCA0600835D9B /* MainPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */; };
+		949FAE671B4CCA0600835D9B /* MainPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		947CF8B21B4B8E99009B2FA2 /* Miscellaneous Photo TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miscellaneous Photo TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947CF8B71B4B8E99009B2FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947CF8B81B4B8E99009B2FA2 /* Miscellaneous_Photo_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Miscellaneous_Photo_TrackerTests.m; sourceTree = "<group>"; };
+		949FAE631B4CCA0600835D9B /* MainPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPhotosViewController.h; sourceTree = "<group>"; };
+		949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPhotosViewController.m; sourceTree = "<group>"; };
+		949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPhotosViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		947CF89B1B4B8E99009B2FA2 /* Miscellaneous Photo Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				949FAE631B4CCA0600835D9B /* MainPhotosViewController.h */,
+				949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */,
+				949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */,
 				947CF8A01B4B8E99009B2FA2 /* AppDelegate.h */,
 				947CF8A11B4B8E99009B2FA2 /* AppDelegate.m */,
 				947CF8A31B4B8E99009B2FA2 /* ViewController.h */,
@@ -201,6 +209,7 @@
 			files = (
 				947CF8A81B4B8E99009B2FA2 /* Main.storyboard in Resources */,
 				947CF8AD1B4B8E99009B2FA2 /* LaunchScreen.xib in Resources */,
+				949FAE671B4CCA0600835D9B /* MainPhotosViewController.xib in Resources */,
 				947CF8AA1B4B8E99009B2FA2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				947CF8A51B4B8E99009B2FA2 /* ViewController.m in Sources */,
 				947CF8A21B4B8E99009B2FA2 /* AppDelegate.m in Sources */,
+				949FAE661B4CCA0600835D9B /* MainPhotosViewController.m in Sources */,
 				947CF89F1B4B8E99009B2FA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +428,7 @@
 				947CF8BE1B4B8E99009B2FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		947CF8BF1B4B8E99009B2FA2 /* Build configuration list for PBXNativeTarget "Miscellaneous Photo TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				947CF8C11B4B8E99009B2FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

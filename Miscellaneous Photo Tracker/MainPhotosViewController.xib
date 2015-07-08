@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPhotosViewController">
+            <connections>
+                <outlet property="collectionView" destination="hI3-uI-t5q" id="zpQ-3q-OUe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="vbG-xc-qYF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUw-Xo-hdw">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Main Photos" id="PAO-aa-4CB">
+                            <barButtonItem key="leftBarButtonItem" title="Edit" id="xkY-1S-Ghx">
+                                <connections>
+                                    <action selector="editPhotosButton:" destination="-1" id="7c9-XI-r7O"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Old" id="wf2-ro-a9O">
+                                <connections>
+                                    <action selector="goToOldPhotosButton:" destination="-1" id="dl0-4X-7aO"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hI3-uI-t5q">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fEG-Sa-VWB">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="imP-6J-kg5"/>
+                        <outlet property="delegate" destination="-1" id="f04-rL-xPn"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hI3-uI-t5q" secondAttribute="trailing" id="9mN-KH-Uc6"/>
+                <constraint firstItem="hI3-uI-t5q" firstAttribute="top" secondItem="vUw-Xo-hdw" secondAttribute="bottom" id="SPZ-jY-ssi"/>
+                <constraint firstAttribute="trailing" secondItem="vUw-Xo-hdw" secondAttribute="trailing" id="bRV-57-Kc0"/>
+                <constraint firstItem="vUw-Xo-hdw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dVi-ZM-eQK"/>
+                <constraint firstItem="vUw-Xo-hdw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="f8I-tN-fhJ"/>
+                <constraint firstItem="hI3-uI-t5q" firstAttribute="top" secondItem="vUw-Xo-hdw" secondAttribute="bottom" id="qfM-ng-2qi"/>
+                <constraint firstItem="hI3-uI-t5q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wF0-eU-Dwo"/>
+                <constraint firstAttribute="bottom" secondItem="hI3-uI-t5q" secondAttribute="bottom" id="zEP-s8-Cud"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="181.5" y="358.5"/>
+        </view>
+    </objects>
+</document>

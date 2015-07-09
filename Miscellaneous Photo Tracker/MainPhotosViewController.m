@@ -8,17 +8,46 @@
 
 #import "MainPhotosViewController.h"
 
+static NSString *imageCellIdentifier = @"ImageCell";
+
 @interface MainPhotosViewController ()
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSMutableArray *allPictures;
 
 @end
 
 @implementation MainPhotosViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self) {
+        self.allPictures = [[NSMutableArray alloc] init];
+        
+        NSMutableArray *firstSection = [[NSMutableArray alloc] init];
+        NSMutableArray *secondSection = [[NSMutableArray alloc] init];
+        for (int i=0; i<50; i++) {
+            [firstSection addObject:[NSString stringWithFormat:@"Cell %d", i]];
+            [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
+        }
+        [self.allPictures addObject:firstSection];
+        [self.allPictures addObject:secondSection];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"Image" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:imageCellIdentifier];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(196, 340)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [self.collectionView setCollectionViewLayout:flowLayout];
 }
 
 
@@ -30,14 +59,29 @@
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - UICollectionView Datasource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return self.allPictures.count;
 }
-*/
+
+- (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    NSMutableArray *sectionArray = self.allPictures[section];
+    return sectionArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:imageCellIdentifier forIndexPath:indexPath];
+    
+    NSMutableArray *array = self.allPictures[indexPath.section];
+    NSString *fileName = array[indexPath.row];
+    
+    UIImageView *imageView = (UIImageView*)[cell viewWithTag:100];
+    imageView.image = [UIImage imageNamed:@"tc.png"];
+    return cell;
+    
+}
 
 @end

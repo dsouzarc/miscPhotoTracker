@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
-@interface MainPhotosViewController : ViewController
+@interface MainPhotosViewController : ViewController <UICollectionViewDelegate, UICollectionViewDataSource,
+                                                        UICollectionViewDelegateFlowLayout>
 
 @end

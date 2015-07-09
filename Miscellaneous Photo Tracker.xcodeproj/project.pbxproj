@@ -16,6 +16,8 @@
 		947CF8B91B4B8E99009B2FA2 /* Miscellaneous_Photo_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 947CF8B81B4B8E99009B2FA2 /* Miscellaneous_Photo_TrackerTests.m */; };
 		949FAE661B4CCA0600835D9B /* MainPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */; };
 		949FAE671B4CCA0600835D9B /* MainPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */; };
+		949FAE6B1B4E289A00835D9B /* Image.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE6A1B4E289A00835D9B /* Image.xib */; };
+		949FAE6F1B4E2F9E00835D9B /* tc.png in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE6E1B4E2F9E00835D9B /* tc.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		949FAE631B4CCA0600835D9B /* MainPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPhotosViewController.h; sourceTree = "<group>"; };
 		949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPhotosViewController.m; sourceTree = "<group>"; };
 		949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPhotosViewController.xib; sourceTree = "<group>"; };
+		949FAE6A1B4E289A00835D9B /* Image.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Image.xib; sourceTree = "<group>"; };
+		949FAE6E1B4E2F9E00835D9B /* tc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		947CF89B1B4B8E99009B2FA2 /* Miscellaneous Photo Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				949FAE6E1B4E2F9E00835D9B /* tc.png */,
 				949FAE631B4CCA0600835D9B /* MainPhotosViewController.h */,
 				949FAE641B4CCA0600835D9B /* MainPhotosViewController.m */,
 				949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */,
@@ -97,6 +102,7 @@
 				947CF8A91B4B8E99009B2FA2 /* Images.xcassets */,
 				947CF8AB1B4B8E99009B2FA2 /* LaunchScreen.xib */,
 				947CF89C1B4B8E99009B2FA2 /* Supporting Files */,
+				949FAE6A1B4E289A00835D9B /* Image.xib */,
 			);
 			path = "Miscellaneous Photo Tracker";
 			sourceTree = "<group>";
@@ -207,9 +213,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949FAE6F1B4E2F9E00835D9B /* tc.png in Resources */,
 				947CF8A81B4B8E99009B2FA2 /* Main.storyboard in Resources */,
 				947CF8AD1B4B8E99009B2FA2 /* LaunchScreen.xib in Resources */,
 				949FAE671B4CCA0600835D9B /* MainPhotosViewController.xib in Resources */,
+				949FAE6B1B4E289A00835D9B /* Image.xib in Resources */,
 				947CF8AA1B4B8E99009B2FA2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

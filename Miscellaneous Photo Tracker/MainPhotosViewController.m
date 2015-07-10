@@ -45,7 +45,7 @@ static NSString *imageCellIdentifier = @"ImageCell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"Image" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:imageCellIdentifier];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(196, 340)];
+    [flowLayout setItemSize:CGSizeMake(98, 170)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [self.collectionView setCollectionViewLayout:flowLayout];
 }

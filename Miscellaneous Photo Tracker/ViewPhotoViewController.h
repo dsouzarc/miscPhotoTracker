@@ -10,4 +10,6 @@
 
 @interface ViewPhotoViewController : ViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil image:(UIImage*)image;
+
 @end

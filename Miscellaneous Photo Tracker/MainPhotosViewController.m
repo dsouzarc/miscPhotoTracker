@@ -15,6 +15,7 @@ static NSString *imageCellIdentifier = @"ImageCell";
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (strong, nonatomic) NSMutableArray *allPictures;
+@property (strong, nonatomic) ViewPhotoViewController *viewPhotoVC;
 
 @end
 
@@ -33,6 +34,7 @@ static NSString *imageCellIdentifier = @"ImageCell";
             [firstSection addObject:[NSString stringWithFormat:@"Cell %d", i]];
             [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
         }
+        
         [self.allPictures addObject:firstSection];
         [self.allPictures addObject:secondSection];
     }
@@ -69,6 +71,17 @@ static NSString *imageCellIdentifier = @"ImageCell";
 {
     NSMutableArray *sectionArray = self.allPictures[section];
     return sectionArray.count;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSMutableArray *array = self.allPictures[indexPath.section];
+    UIImage *image = [UIImage imageNamed:@"tc.png"]; //array[indexPath.row];
+    
+    self.viewPhotoVC = [[ViewPhotoViewController alloc] initWithNibName:@"ViewPhotoViewController" bundle:[NSBundle mainBundle] image:image];
+    
+    self.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:self.viewPhotoVC animated:YES completion:nil];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{

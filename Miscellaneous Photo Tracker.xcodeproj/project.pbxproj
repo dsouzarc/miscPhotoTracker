@@ -18,6 +18,8 @@
 		949FAE671B4CCA0600835D9B /* MainPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */; };
 		949FAE6B1B4E289A00835D9B /* Image.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE6A1B4E289A00835D9B /* Image.xib */; };
 		949FAE6F1B4E2F9E00835D9B /* tc.png in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE6E1B4E2F9E00835D9B /* tc.png */; };
+		949FAE731B4F6C4700835D9B /* ViewPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FAE711B4F6C4700835D9B /* ViewPhotoViewController.m */; };
+		949FAE741B4F6C4700835D9B /* ViewPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FAE721B4F6C4700835D9B /* ViewPhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		949FAE651B4CCA0600835D9B /* MainPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPhotosViewController.xib; sourceTree = "<group>"; };
 		949FAE6A1B4E289A00835D9B /* Image.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Image.xib; sourceTree = "<group>"; };
 		949FAE6E1B4E2F9E00835D9B /* tc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tc.png; sourceTree = "<group>"; };
+		949FAE701B4F6C4700835D9B /* ViewPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPhotoViewController.h; sourceTree = "<group>"; };
+		949FAE711B4F6C4700835D9B /* ViewPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPhotoViewController.m; sourceTree = "<group>"; };
+		949FAE721B4F6C4700835D9B /* ViewPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewPhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,9 @@
 				947CF8AB1B4B8E99009B2FA2 /* LaunchScreen.xib */,
 				947CF89C1B4B8E99009B2FA2 /* Supporting Files */,
 				949FAE6A1B4E289A00835D9B /* Image.xib */,
+				949FAE701B4F6C4700835D9B /* ViewPhotoViewController.h */,
+				949FAE711B4F6C4700835D9B /* ViewPhotoViewController.m */,
+				949FAE721B4F6C4700835D9B /* ViewPhotoViewController.xib */,
 			);
 			path = "Miscellaneous Photo Tracker";
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949FAE741B4F6C4700835D9B /* ViewPhotoViewController.xib in Resources */,
 				949FAE6F1B4E2F9E00835D9B /* tc.png in Resources */,
 				947CF8A81B4B8E99009B2FA2 /* Main.storyboard in Resources */,
 				947CF8AD1B4B8E99009B2FA2 /* LaunchScreen.xib in Resources */,
@@ -237,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947CF8A51B4B8E99009B2FA2 /* ViewController.m in Sources */,
+				949FAE731B4F6C4700835D9B /* ViewPhotoViewController.m in Sources */,
 				947CF8A21B4B8E99009B2FA2 /* AppDelegate.m in Sources */,
 				949FAE661B4CCA0600835D9B /* MainPhotosViewController.m in Sources */,
 				947CF89F1B4B8E99009B2FA2 /* main.m in Sources */,

@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewPhotoViewController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="imageView" destination="1ji-SM-MQz" id="4Ue-Zy-P1V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="6FQ-w0-6ov"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiZ-aW-hbO">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="View Photo" id="EB1-uR-Z7f">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="X85-BJ-y43">
+                                <connections>
+                                    <action selector="cancelButton:" destination="-1" id="uNv-GD-usT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="trash" id="E0h-Ek-9lU">
+                                <connections>
+                                    <action selector="deleteButton:" destination="-1" id="M9A-rg-lgM"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ji-SM-MQz">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1ji-SM-MQz" firstAttribute="top" secondItem="XiZ-aW-hbO" secondAttribute="bottom" id="5TU-3Z-71b"/>
+                <constraint firstAttribute="bottom" secondItem="1ji-SM-MQz" secondAttribute="bottom" id="7em-0G-cBO"/>
+                <constraint firstItem="XiZ-aW-hbO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9R4-Pv-Ndq"/>
+                <constraint firstItem="XiZ-aW-hbO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Fxd-zI-Dbb"/>
+                <constraint firstAttribute="trailing" secondItem="XiZ-aW-hbO" secondAttribute="trailing" id="LI1-16-b7K"/>
+                <constraint firstItem="1ji-SM-MQz" firstAttribute="top" secondItem="XiZ-aW-hbO" secondAttribute="bottom" id="PJY-VN-khf"/>
+                <constraint firstAttribute="trailing" secondItem="1ji-SM-MQz" secondAttribute="trailing" id="SEc-4z-uQD"/>
+                <constraint firstItem="1ji-SM-MQz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YZM-qI-GiV"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="359.5" y="402.5"/>
         </view>
     </objects>
 </document>

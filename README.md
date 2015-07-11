@@ -8,4 +8,4 @@ I got annoyed at how the receipts cluttered my Camera Roll/Photos, especially as
 
 So I built this app as a super simple private photos app for misc. photos that I needed to keep but don't want to see when I'm scrolling through my photos.
 
-
+About half way into it, I discovered another app that did the exact same function so I decided to discontinue work on this so that I could work on more challenging/interesting projects

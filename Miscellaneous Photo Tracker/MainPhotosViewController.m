@@ -62,6 +62,7 @@ static NSString *imageCellIdentifier = @"ImageCell";
 }
 
 #pragma mark - UICollectionView Datasource
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return self.allPictures.count;
@@ -96,5 +97,6 @@ static NSString *imageCellIdentifier = @"ImageCell";
     return cell;
     
 }
+
 
 @end

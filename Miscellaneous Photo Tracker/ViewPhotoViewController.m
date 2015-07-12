@@ -35,7 +35,8 @@
 
 
 - (IBAction)cancelButton:(id)sender {
-    
+    self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)deleteButton:(id)sender {
